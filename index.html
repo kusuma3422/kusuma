@@ -1,66 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Ice Cream!</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Navigation Bar Styling */
-        nav {
-            background-color: #ff69b4;
-            padding: 10px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #fff0f5;
-        }
-
-        html {
-            scroll-behavior: smooth; /* Enables smooth scrolling */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Awesome Ice Cream!</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about-us">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <!-- Navigation Menu (Identical on all pages) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="Signin.html">Sign Up</a>
+  </nav>
 
-    <!-- Page Content -->
-    <header id="home">
-        <h1>Welcome to the World of Ice Cream!</h1>
-    </header>
+  <header class="hero-section">
+    <h1>Welcome to <B>Awesome Ice Cream!</B></h1>
+    <p>Your one-stop destination for delicious frozen treats 🍦</p>
+  </header>
 
-    <main>
-        <section class="intro">
-            <h2>Discover Your Favorite Treat</h2>
-            <p>
-                Ice cream is a beloved frozen dessert enjoyed by people of all ages around the globe.
-                From classic vanilla to exotic fruit sorbets, there's a flavor for everyone!
-            </p>
-            <img src="https://res.cloudinary.com/dfnzwever/image/upload/v1744295038/ice_cream_1_gxa7et.jpg" alt="A scoop of delicious ice cream">
+  <main>
+    <section class="content-section">
+      <h2>Discover Your Favorite Treat</h2>
+      <p>Ice cream is a beloved frozen dessert enjoyed by people of all ages around the globe.
+        From classic vanilla to exotic fruit sorbets, there's a flavor for everyone!</p>
+      <img 
+      src="https://res.cloudinary.com/dfnzwever/image/upload/v1744295038/ice_cream_1_gxa7et.jpg" 
+      alt="A scoop of delicious ice cream"
+      style="display: block; margin: 20px auto; max-width: 50%; height: auto; border-radius: 12px;"
+    >
         </section>
+
 
         <section class="flavors">
             <h2>Popular Flavors</h2>
-            <p>Some all-time favorites include:</p>
+            
             <ul>
                 <li>Chocolate</li>
                 <li>Vanilla</li>
@@ -69,41 +46,38 @@
                 <li>Cookies and Cream</li>
             </ul>
         </section>
+      </section>
+      <!-- Content Section: To-Do List -->
+  <section class="content-section">
+    <h2>Ice Cream To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+    
+  </section>
 
-        <section class="interactive">
-            <h2>Try This!</h2>
-            <button id="specialButton">Click Me for a Surprise!</button>
-        </section>
-
-        <section id="about-us" class="about-us">
-            <h2>About Us</h2>
-            <p>
-                At Awesome Ice Cream, we are passionate about bringing joy to your taste buds. Our mission is to explore the world of flavors and create unforgettable frozen experiences. From timeless classics to bold, adventurous combinations, we craft each scoop with love, creativity, and the finest ingredients. Whether you're enjoying a cone on a sunny afternoon or celebrating a special moment, we’re here to make it sweeter. Our team is dedicated to innovation, quality, and delivering happiness—one delicious bite at a time.
-
-
-            </p>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>
-                We'd love to hear from you! For questions, feedback, or just to say hi, <br> out at:<br>
-📧 Email: hello@awesomeicecream.com
-<br>📞 Phone: (123) 456-7890
-<br>📍 Address: 123 Scoop Street, Sweetville, CA 90210
-
-<br> Whether you have a flavor suggestion or just want to share the love, we're all ears (and scoops)!
+  <!-- Content Section: Image Gallery -->
+  <section class="content-section">
+    <h2>Ice Cream Gallery</h2>
+    <input type="text" id="imageUrlInput" placeholder="Enter image URL...">
+    <button onclick="addImage()">Add Image</button>
+    <div id="imageGallery" class="image-gallery"></div>
+  </section>
 
 
-                <a href="mailto:hello@awesomeicecream.com">hello@awesomeicecream.com</a>
-            </p>
-        </section>
-    </main>
 
-    <footer>
-        <p>© 2023 My Ice Cream Page. Enjoy!</p>
-    </footer>
+    <section class="content-section">
+      <h2>Get Started</h2>
+      <p>Ready to dive into the world of flavors? <a href="login.html">Login</a> or <a href="about.html">learn more about us</a>.</p>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2023 My Ice Cream Page. Enjoy!</p>
+</footer>
+
+<!-- Link the external JavaScript file -->
+<script src="script.js"></script>
+
 </body>
 </html>

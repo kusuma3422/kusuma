@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Awesome Ice Cream!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu (Identical on all pages) -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="Signin.html">Sign Up</a>
+    </nav>
+
+    <main>
+         <!-- Added id="contact-section" for specific form targeting if needed -->
+        <section id="contact-section" class="content-section contact">
+            <h2>Contact</h2>
+            <p style="text-align: center;"> <!-- Center align this intro paragraph -->
+                We'd love to hear from you! For questions, feedback, or just to say hi, reach out at:<br>
+                📧 Email: <a href="mailto:hello@awesomeicecream.com">hello@awesomeicecream.com</a><br>
+                📞 Phone: (123) 456-7890<br>
+                📍 Address: 123 Scoop Street, Sweetville, CA 90210<br>
+                <br><BR>
+                    <BR>
+                Or Send Us a Message Using The <B>Form</B> Below!
+            </p>
+
+            <!-- Contact Form -->
+            <form action="#" method="POST"> <!-- action still needs server-side script -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" placeholder="your.email@example.com" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="user_message" rows="5" placeholder="What's on your mind?" required></textarea>
+                </div>
+                <div>
+                     <!-- Contact form submit button -->
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+            <!-- End Contact Form -->
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 My Ice Cream Page. Enjoy!</p>
+    </footer>
+    <!-- Link the external JavaScript file -->
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>

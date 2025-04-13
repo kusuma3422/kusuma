@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Awesome Ice Cream!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu (Identical on all pages) -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="Signin.html">Sign Up</a>
+    </nav>
+
+    <main>
+        <section id="login-section" class="content-section"> <!-- Use ID for styling hook -->
+            <h2>Login</h2>
+            <p style="text-align: center;">Please enter your credentials below.</p>
+
+            <!-- Login Form -->
+            <form id="login-form" action="#" method="POST"> <!-- action needs server-side script -->
+                <div>
+                    <label for="username">Username or Email:</label>
+                    <!-- Use type="email" if you expect email, "text" for username -->
+                    <input type="email" id="username" name="login_credential" placeholder="e.g., user@example.com" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="login_password" placeholder="Enter your password" required>
+                </div>
+                <div>
+                    <!-- Login form submit button -->
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <!-- End Login Form -->
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 My Ice Cream Page. Enjoy!</p>
+    </footer>
+
+    <!-- Link the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
