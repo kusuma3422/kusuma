@@ -1,83 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> Awesome Ice Cream!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Note-Taking App with Titles & Pinning</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Menu (Identical on all pages) -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
-    <a href="login.html">Login</a>
-    <a href="Signin.html">Sign Up</a>
-  </nav>
+  <div class="container">
+    <h1>My Notes</h1>
+    <div class="input-section">
+      <input type="text" id="noteTitle" placeholder="Note Title...">
+      <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+      <button id="addNoteBtn">Add Note</button>
+    </div>
+    <div id="notesContainer"></div>
+  </div>
 
-  <header class="hero-section">
-    <h1>Welcome to <B>Awesome Ice Cream!</B></h1>
-    <p>Your one-stop destination for delicious frozen treats 🍦</p>
-  </header>
-
-  <main>
-    <section class="content-section">
-      <h2>Discover Your Favorite Treat</h2>
-      <p>Ice cream is a beloved frozen dessert enjoyed by people of all ages around the globe.
-        From classic vanilla to exotic fruit sorbets, there's a flavor for everyone!</p>
-      <img 
-      src="https://res.cloudinary.com/dfnzwever/image/upload/v1744295038/ice_cream_1_gxa7et.jpg" 
-      alt="A scoop of delicious ice cream"
-      style="display: block; margin: 20px auto; max-width: 50%; height: auto; border-radius: 12px;"
-    >
-        </section>
-
-
-        <section class="flavors">
-            <h2>Popular Flavors</h2>
-            
-            <ul>
-                <li>Chocolate</li>
-                <li>Vanilla</li>
-                <li>Strawberry</li>
-                <li>Mint Chocolate Chip</li>
-                <li>Cookies and Cream</li>
-            </ul>
-        </section>
-      </section>
-      <!-- Content Section: To-Do List -->
-  <section class="content-section">
-    <h2>Ice Cream To-Do List</h2>
-    <input type="text" id="taskInput" placeholder="Enter a task...">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
-    
-  </section>
-
-  <!-- Content Section: Image Gallery -->
-  <section class="content-section">
-    <h2>Ice Cream Gallery</h2>
-    <input type="text" id="imageUrlInput" placeholder="Enter image URL...">
-    <button onclick="addImage()">Add Image</button>
-    <div id="imageGallery" class="image-gallery"></div>
-  </section>
-
-
-
-    <section class="content-section">
-      <h2>Get Started</h2>
-      <p>Ready to dive into the world of flavors? <a href="login.html">Login</a> or <a href="about.html">learn more about us</a>.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2023 My Ice Cream Page. Enjoy!</p>
-</footer>
-
-<!-- Link the external JavaScript file -->
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
